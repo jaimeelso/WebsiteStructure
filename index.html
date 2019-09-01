@@ -1,0 +1,67 @@
+<!-- Website structure made by Jaime Elso | https://jaimeelso.com | V1.0 -->
+<!DOCTYPE html>
+<!-- Specify the language
+Abkhazian		ab  |  Avaric			av  |  Bislama			bi  |  Chinese (Simp)	zh-Hans  |  Dutch			nl  |  Fula, Pulaar		ff  |  Haitian Creole	ht  |  Indonesian			id, in  |  Kannada			kn  |  Kongo			kg  |  Luga-Katanga		lu  |  Marathi			mr  |  Norwegian bokmål						nb  |  Pashto, Pushto		ps  |  Samoan			sm  |  Sinhalese			si  |  Swedish		sv  |  Tonga		to  |  Vietnamese		vi  |  Zulu		zu
+Afar			aa  |  Avestan			ae  |  Bosnian			bs  |  Chinese (Tra)	zh-Hant  |  Dzongkha		dz  |  Galician			gl  |  Hausa			ha  |  Interlingua				ia  |  Kanuri			kr  |  Korean			ko  |  Luganda, Ganda	lg  |  Marshallese		mh  |  Norwegian nynorsk					nn  |  Persian (Farsi)		fa  |  Sango			sg  |  Siswati				ss  |  Tagalog		tl  |  Tsonga		ts  |  Volapük			vo
+Afrikaans		af  |  Aymara			ay  |  Breton			br  |  Chuvash			cv		 |  English			en  |  Gaelic(Scottish)	gd  |  Hebrew			he  |  Interlingue				ie  |  Kashmiri			ks  |  Kurdish			ku  |  Luxembourgish	lb  |  Moldavian		mo  |  Nuosu								ii  |  Polish				pl  |  Sanskrit			sa  |  Slovak				sk  |  Tahitian		ty  |  Turkish		tr  |  Wallon			wa
+Akan			ak  |  Azerbaijani		az  |  Bulgarian		bg  |  Cornish			kw		 |  Esperanto		eo  |  Gaelic (Manx)	gv  |  Herero			hz  |  Inuktitut				iu  |  Kazakh			kk  |  Kwanyama			kj  |  Manx				gv  |  Mongolian		mn  |  Occitan								oc  |  Portuguese			pt  |  Serbian			sr  |  Slovenian			sl  |  Tajik		tg  |  Turkmen		tk  |  Welsh			cy
+Albanian		sq  |  Bambara			bm  |  Burmese			my  |  Corsican			co		 |  Estonian		et  |  Georgian			ka  |  Hindi			hi  |  Inupiak					ik  |  Khmer			km  |  Lao				lo  |  Macedonian		mk  |  Nauru			na  |  Ojibwe								oj  |  Punjabi (Eastern)	pa  |  Serbo-Croatian	sh  |  Somali				so  |  Tamil		ta  |  Twi			tw  |  Wolof			wo
+Amharic			am  |  Bashkir			ba  |  Catalan			ca  |  Cree				cr		 |  Ewe				ee  |  German			de  |  Hiri Motu		ho  |  Irish					ga  |  Kikuyu			ki  |  Latin			la  |  Malagasy			mg  |  Navajo			nv  |  Old Church Slavonic, Old Bulgarian	cu  |  Quechua				qu  |  Sesotho			st  |  Southern Ndebele		nr  |  Tatar		tt  |  Uyghur		ug  |  Western Frisian	fy
+Arabic			ar  |  Basque			eu  |  Chamorro			ch  |  Croatian			hr		 |  Faroese			fo  |  Greek			el  |  Hungarian		hu  |  Italian					it  |  Kinyarwanda		rw  |  Latvian			lv  |  Malay			ms  |  Ndonga			ng  |  Oriya								or  |  Romansh				rm  |  Setswana			tn  |  Spanish				es  |  Telugu		te  |  Ukrainian	uk  |  Xhosa			xh
+Aragonese		an  |  Belarusian		be  |  Chechen			ce  |  Czech			cs		 |  Fijian			fj  |  Greenlandic		kl  |  Icelandic		is  |  Japanese					ja  |  Kirundi			rn  |  Limburgish		li  |  Malayalam		ml  |  Northern Ndebele	nd  |  Oromo (Afaan Oromo)					om  |  Romanian				ro  |  Shona			sn  |  Sundanese			su  |  Thai			th  |  Urdu			ur  |  Yiddish		yi, ji
+Armenian		hy  |  Bengali (Bangla)	bn  |  Chi-chewa,Nyanja	ny  |  Danish			da		 |  Finnish			fi  |  Guarani			gn  |  Ido				io  |  Javanese					jv  |  Kyrgyz			ky  |  Lingala			ln  |  Maltese			mt  |  Nepali			ne  |  Ossetian								os  |  Russian				ru  |  Sichuan Yi		ii  |  Swahili (Kiswahili)	sw  |  Tibetan		bo  |  Uzbek		uz  |  Yoruba			yo
+Assamese		as  |  Bihari			bh  |  Chinese			zh  |  Divehi,Maldivian	dv		 |  French			fr  |  Gujarati			gu  |  Igbo				ig  |  Kalaallisut, Greenlandic	kl  |  Komi				kv  |  Lithuanian		lt  |  Maori			mi  |  Norwegian		no  |  Pāli									pi  |  Sami					se  |  Sindhi			sd  |  Swati				ss  |  Tigrinya		ti  |  Venda		ve  |  Zhuang, Chuang	za -->
+<html lang="...">
+<!-- Head tag include a title for the document, scripts, styles, meta information, and more. -->
+<head>
+	<!-- Google Analytics | 1. Register on https://analytics.google.com  2. Copy script code inside the script tag bellow -->
+	<link rel="preconnect" href="https://www.googletagmanager.com">
+	<link rel="preconnect" href="https://www.google-analytics.com">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145017503-1"></script>
+	<script>
+		"..."
+	</script>
+	<!-- Setting if it's possible service worker | Know more about service-worker seeing /service-worker.js -->
+	<script>
+		if ('serviceWorker' in navigator) {
+			window.addEventListener('load', () => {
+				navigator.serviceWorker.register('/service-worker.js');
+			});
+		}
+	</script>
+	<!-- Tell Search Engines that the content on this page is replicated in other language -->
+	<!-- Allways specify this page -->
+	<link rel="alternate" hreflang="..." href="https://yourdomain.yourextension/this/page/path" />
+	<!-- Specify other language page with the same content | One tag per other language page -->
+	<link rel="alternate" hreflang="..." href="https://yourdomain.yourextension/other/page/path" />
+	<!-- Set the url that will get the reputation of this content -->
+	<link href="https://yourdomain.yourextension/this/page/path" rel="canonical" />
+	<!-- Tittle | Should have less tahn 70 characters and is too relevant for Search Optimization -->
+	<title>Your Title</title>
+	<meta content="Your Title" property=og:title />
+	<meta content="Your Title" name=twitter:title />
+	<meta content="Your Title" name=DC.title />
+	<!-- Description | Should have less than 156 characters | This description will appear on your website preview at search engines -->
+	<meta content="Your Description" name=description />
+	<meta content="Your Description" property=og:description />
+	<meta content="Your Description" name=DC.description />
+	<!-- Keywords for search engines -->
+	<meta content="Keywords1, Keywords2, Keywords3, Keywords4, Keywords5" name=keywords>
+	<meta content="Keywords1, Keywords2, Keywords3, Keywords4, Keywords5" name=DC.subject />
+
+	<!-- URL of the page -->
+	<meta content="https://jaimeelso.com/" property="og:url" />
+	<meta content="https://jaimeelso.com/" name="DC.identifier" scheme="DCTERMS.URI" />
+</head>
+<body>
+	<header>
+		
+	</header>
+	<main>
+		
+	</main>
+	<footer>
+	
+	</footer>
+</body>
+</html>
