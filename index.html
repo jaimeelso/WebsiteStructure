@@ -42,7 +42,7 @@ Assamese         as  |  Bihari            bh  |  Chinese          zh  |  Divehi,
 	<meta content="https://yourdomain.yourextension/this/page/path" property="og:url" />
 	<meta content="https://yourdomain.yourextension/this/page/path" name="DC.identifier" scheme="DCTERMS.URI" />
 
-	<!-- Tittle | Should have less tahn 70 characters and is too relevant for Search Optimization -->
+	<!-- Tittle | Should have less tahn 65 characters and is too relevant for Search Optimization -->
 	<title>Your Title</title>
 	<meta content="Your Title" property=og:title />
 	<meta content="Your Title" name=twitter:title />
@@ -58,10 +58,10 @@ Assamese         as  |  Bihari            bh  |  Chinese          zh  |  Divehi,
 	<meta content="Keywords1, Keywords2, Keywords3, Keywords4, Keywords5" name=DC.subject />
 
 	<!-- Person who created the content (first two) | Other people who have collaborated | Person who maintains the content -->
-	<meta name=author content="Name">
-	<meta name=DC.creator content="Name" />
-	<meta name=DC.contributor content="Name" />
-	<meta name=DC.publisher content="Name" />
+	<meta name=author content="name">
+	<meta name=DC.creator content="name" />
+	<meta name=DC.contributor content="name" />
+	<meta name=DC.publisher content="name" />
 
 	<!-- Specify the character encoding for the HTML document | Common values: UTF-8 (Unicode), ISO-8859-1 (Latin alphabet) -->
 	<meta charset="UTF-8" />
@@ -69,19 +69,45 @@ Assamese         as  |  Bihari            bh  |  Chinese          zh  |  Divehi,
 	<!-- Twitter card | Content designed to give users a rich media experience whenever tweets contain links to a site’s content -->
 	<!-- Types of cards: summary, summary_large_image, app, player -->
 	<meta name="twitter:card" content="summary_large_image">
-	<!-- @username of website -->
+	<!-- @username of website | Used with summary, summary_large_image, app, player cards -->
 	<meta name="twitter:site" content="@username">
-	<!-- @username of content creator -->
+	<!-- @username of content creator | Used with summary_large_image cards -->
 	<meta name="twitter:creator" content="@username">
-	<!-- Title of content (max 70 characters) | If an og:title exist in the markup but twitter:card is absent, then a summary card may be rendered. -->
+	<!-- Title of content (max 65 characters) | If an og:title exist in the markup but twitter:card is absent, then a summary card may be rendered. | Used with summary, summary_large_image, player cards -->
 	<meta name="twitter:title" content="title">
-	<!-- Description of content (maximum 200 characters) | If an og:description exist in the markup but twitter:card is absent, then a summary card may be rendered. -->
+	<!-- Description of content (maximum 200 characters) | If an og:description exist in the markup but twitter:card is absent, then a summary card may be rendered. | Used with summary, summary_large_image, player cards -->
 	<meta name="twitter:description" content="description">
-	<!-- URL of image to use in the card. Images must be less than 5MB in size. JPG, PNG, WEBP and GIF formats are supported. Only the first frame of an animated GIF will be used. SVG is not supported. | If an og:image exist in the markup but twitter:card is absent, then a summary card may be rendered. -->
+	<!-- URL of image to use in the card. Images must be less than 5MB in size. JPG, PNG, WEBP and GIF formats are supported. Only the first frame of an animated GIF will be used. SVG is not supported. | If an og:image exist in the markup but twitter:card is absent, then a summary card may be rendered. | Used with summary, summary_large_image, player cards -->
 	<meta name="twitter:image" content="image">
-	<!-- A text description of the image conveying the essential nature of an image to users who are visually impaired. Maximum 420 characters. -->
+	<!-- A text description of the image conveying the essential nature of an image to users who are visually impaired. Maximum 420 characters. | Used with summary, summary_large_image, player cards -->
 	<meta name="twitter:image:alt" content="alt">
-
+	<!-- HTTPS URL of player iframe. | Used with player card -->
+	<meta name="twitter:player" content="url">
+	<!-- Width of iframe in pixels. | Used with player card -->
+	<meta name="twitter:player:width" content="width">
+	<!-- Height of iframe in pixels. | Used with player card -->
+	<meta name="twitter:player:height" content="height">
+	<!-- URL to raw video or audio stream. | Used with player card -->
+	<meta name="twitter:player:stream" content="url">
+	<!-- Name of your iPhone app. | Used with app card -->
+	<meta name="twitter:app:name:iphone" content="name">
+	<!-- Your app ID in the iTunes App Store (Note: NOT your bundle ID). | Used with app card -->
+	<meta name="twitter:app:id:iphone" content="url">
+	<!-- Your app’s custom URL scheme (you must include ”://” after your scheme name). | Used with app card -->
+	<meta name="twitter:app:url:iphone" content="url">
+	<!-- Name of your iPad optimized app. | Used with app card -->
+	<meta name="twitter:app:name:ipad" content="url">
+	<!-- Your app ID in the iTunes App Store. | Used with app card -->
+	<meta name="twitter:app:id:ipad" content="url">
+	<!-- Your app’s custom URL scheme. | Used with app card -->
+	<meta name="twitter:app:url:ipad" content="url">
+	<!-- Name of your Android app. | Used with app card -->
+	<meta name="twitter:app:name:googleplay" content="url">
+	<!-- Your app ID in the Google Play Store. | Used with app card -->
+	<meta name="twitter:app:id:googleplay" content="url">
+	<!-- Your app’s custom URL scheme. | Used with app card -->
+	<meta name="twitter:app:url:googleplay" content="url">
+	
 </head>
 <!-- The body tag contains all the contents of an HTML document -->
 <body>
