@@ -21,6 +21,7 @@ Assamese         as  |  Bihari            bh  |  Chinese          zh  |  Divehi,
 	<script>
 		"..."
 	</script>
+
 	<!-- Setting if it's possible service worker | Know more about service-worker seeing /service-worker.js -->
 	<script>
 		if ('serviceWorker' in navigator) {
@@ -29,6 +30,7 @@ Assamese         as  |  Bihari            bh  |  Chinese          zh  |  Divehi,
 			});
 		}
 	</script>
+
 	<!-- Tell Search Engines that the content on this page is replicated in other language -->
 	<!-- Allways specify this page -->
 	<link rel="alternate" hreflang="..." href="https://yourdomain.yourextension/this/page/path" />
@@ -39,24 +41,48 @@ Assamese         as  |  Bihari            bh  |  Chinese          zh  |  Divehi,
 	<!-- URL of the page -->
 	<meta content="https://yourdomain.yourextension/this/page/path" property="og:url" />
 	<meta content="https://yourdomain.yourextension/this/page/path" name="DC.identifier" scheme="DCTERMS.URI" />
+
 	<!-- Tittle | Should have less tahn 70 characters and is too relevant for Search Optimization -->
 	<title>Your Title</title>
 	<meta content="Your Title" property=og:title />
 	<meta content="Your Title" name=twitter:title />
 	<meta content="Your Title" name=DC.title />
+
 	<!-- Description | Should have less than 156 characters | This description will appear on your website preview at search engines -->
 	<meta content="Your Description" name=description />
 	<meta content="Your Description" property=og:description />
 	<meta content="Your Description" name=DC.description />
+
 	<!-- Keywords for search engines -->
 	<meta content="Keywords1, Keywords2, Keywords3, Keywords4, Keywords5" name=keywords>
 	<meta content="Keywords1, Keywords2, Keywords3, Keywords4, Keywords5" name=DC.subject />
+
 	<!-- Person who created the content (first two) | Other people who have collaborated | Person who maintains the content -->
 	<meta name=author content="Name">
 	<meta name=DC.creator content="Name" />
 	<meta name=DC.contributor content="Name" />
 	<meta name=DC.publisher content="Name" />
-	</head>
+
+	<!-- Specify the character encoding for the HTML document | Common values: UTF-8 (Unicode), ISO-8859-1 (Latin alphabet) -->
+	<meta charset="UTF-8" />
+
+	<!-- Twitter card | Content designed to give users a rich media experience whenever tweets contain links to a site’s content -->
+	<!-- Types of cards: summary, summary_large_image, app, player -->
+	<meta name="twitter:card" content="summary_large_image">
+	<!-- @username of website -->
+	<meta name="twitter:site" content="@username">
+	<!-- @username of content creator -->
+	<meta name="twitter:creator" content="@username">
+	<!-- Title of content (max 70 characters) | If an og:title exist in the markup but twitter:card is absent, then a summary card may be rendered. -->
+	<meta name="twitter:title" content="title">
+	<!-- Description of content (maximum 200 characters) | If an og:description exist in the markup but twitter:card is absent, then a summary card may be rendered. -->
+	<meta name="twitter:description" content="description">
+	<!-- URL of image to use in the card. Images must be less than 5MB in size. JPG, PNG, WEBP and GIF formats are supported. Only the first frame of an animated GIF will be used. SVG is not supported. | If an og:image exist in the markup but twitter:card is absent, then a summary card may be rendered. -->
+	<meta name="twitter:image" content="image">
+	<!-- A text description of the image conveying the essential nature of an image to users who are visually impaired. Maximum 420 characters. -->
+	<meta name="twitter:image:alt" content="alt">
+
+</head>
 <!-- The body tag contains all the contents of an HTML document -->
 <body>
 	<!-- The header tag represents a container for introductory content or a set of navigational links | Should be inside: h1, h2, logo or icon, authorship information | Could be inside: nav -->
